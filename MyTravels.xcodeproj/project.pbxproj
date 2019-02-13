@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		DC44BB1D221344CF00340F17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC44BB1C221344CF00340F17 /* AppDelegate.swift */; };
-		DC44BB1F221344CF00340F17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC44BB1E221344CF00340F17 /* ViewController.swift */; };
 		DC44BB22221344CF00340F17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC44BB20221344CF00340F17 /* Main.storyboard */; };
 		DC44BB24221344D100340F17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC44BB23221344D100340F17 /* Assets.xcassets */; };
 		DC44BB27221344D100340F17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC44BB25221344D100340F17 /* LaunchScreen.storyboard */; };
+		DC661CC8221436C000E8D646 /* TravelsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC661CC7221436C000E8D646 /* TravelsTableViewController.swift */; };
+		DC661CCA221439AC00E8D646 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC661CC9221439AC00E8D646 /* MapViewController.swift */; };
+		DC661CCD221439C500E8D646 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC661CCC221439C500E8D646 /* CoreLocation.framework */; };
+		DC661CCF2214487200E8D646 /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC661CCE2214487200E8D646 /* SaveData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC44BB19221344CF00340F17 /* MyTravels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTravels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC44BB1C221344CF00340F17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC44BB1E221344CF00340F17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC44BB21221344CF00340F17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC44BB23221344D100340F17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC44BB26221344D100340F17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC44BB28221344D100340F17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC661CC7221436C000E8D646 /* TravelsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelsTableViewController.swift; sourceTree = "<group>"; };
+		DC661CC9221439AC00E8D646 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DC661CCC221439C500E8D646 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DC661CCE2214487200E8D646 /* SaveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC661CCD221439C500E8D646 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				DC44BB1B221344CF00340F17 /* MyTravels */,
 				DC44BB1A221344CF00340F17 /* Products */,
+				DC661CCB221439C500E8D646 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +63,23 @@
 			isa = PBXGroup;
 			children = (
 				DC44BB1C221344CF00340F17 /* AppDelegate.swift */,
-				DC44BB1E221344CF00340F17 /* ViewController.swift */,
+				DC661CC7221436C000E8D646 /* TravelsTableViewController.swift */,
+				DC661CC9221439AC00E8D646 /* MapViewController.swift */,
 				DC44BB20221344CF00340F17 /* Main.storyboard */,
 				DC44BB23221344D100340F17 /* Assets.xcassets */,
 				DC44BB25221344D100340F17 /* LaunchScreen.storyboard */,
 				DC44BB28221344D100340F17 /* Info.plist */,
+				DC661CCE2214487200E8D646 /* SaveData.swift */,
 			);
 			path = MyTravels;
+			sourceTree = "<group>";
+		};
+		DC661CCB221439C500E8D646 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC661CCC221439C500E8D646 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC44BB1F221344CF00340F17 /* ViewController.swift in Sources */,
+				DC661CC8221436C000E8D646 /* TravelsTableViewController.swift in Sources */,
+				DC661CCA221439AC00E8D646 /* MapViewController.swift in Sources */,
+				DC661CCF2214487200E8D646 /* SaveData.swift in Sources */,
 				DC44BB1D221344CF00340F17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
